@@ -1,4 +1,4 @@
-
+```
 The original data sets are described in READMEsource.txt and CODEBOOKsource.txt (copied to my Repo)
 
 The original variable names (from the features.txt file) are already quite descriptive.
@@ -40,7 +40,7 @@ The new variable name can be decoded (from left to right) as follows:
             
 Finally, note that the measurements have all been normalized to lie within [-1...1]; 
 therefore the measurement variables are all unitless   
-```
+
 ----------------------------------------
 column variable     
 ----------------------------------------              
