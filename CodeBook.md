@@ -40,7 +40,7 @@ The new variable name can be decoded (from left to right) as follows:
             
 Finally, note that the measurements have all been normalized to lie within [-1...1]; 
 therefore the measurement variables are all unitless   
-
+```
 ----------------------------------------
 column variable     
 ----------------------------------------              
@@ -185,3 +185,4 @@ column variable
             [-1...1] unitless
   [68] "fBodyGyroJerkMag_std" (numeric) 
             [-1...1] unitless
+```
