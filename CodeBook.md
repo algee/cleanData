@@ -1,4 +1,4 @@
-
+```
 The original data sets are described in READMEsource.txt and CODEBOOKsource.txt (copied to my Repo)
 
 The original variable names (from the features.txt file) are already quite descriptive.
@@ -185,3 +185,4 @@ column variable
             [-1...1] unitless
   [68] "fBodyGyroJerkMag_std" (numeric) 
             [-1...1] unitless
+```
