@@ -1,4 +1,4 @@
-# This script is submitted in fullfillment of the "Getting and Cleaning Data" course project
+# This script is submitted for the "Getting and Cleaning Data" course project.
 
 # run_analysis.R that does the following: 
 # 
