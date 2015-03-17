@@ -1,5 +1,6 @@
 ```
-The original data sets are described in READMEsource.txt and CODEBOOKsource.txt (copied to my Repo)
+The original data sets are described in README_originalSource.txt and 
+features_info_originalSource.txt (copied to my Repo for reference)
 
 The original variable names (from the features.txt file) are already quite descriptive.
 Thus, the new data variable names for the tidy dataset are essentially the original data variable names 
