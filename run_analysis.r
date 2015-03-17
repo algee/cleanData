@@ -21,19 +21,19 @@
 #            test data is appended to training data
 #     4) perform consistency check between files           
 
-activityMap <- read.table("./data/UCI HAR Dataset/activity_labels.txt", sep = "")   # [6 x 1]
-featureName <- read.table("./data/UCI HAR Dataset/features.txt", sep = "")          # [561 x 1]
+activityMap <- read.table("../data/UCI HAR Dataset/activity_labels.txt", sep = "")   # [6 x 1]
+featureName <- read.table("../data/UCI HAR Dataset/features.txt", sep = "")          # [561 x 1]
 
-a <- read.table("./data/UCI HAR Dataset/train/y_train.txt", sep = "")
-b <- read.table("./data/UCI HAR Dataset/test/y_test.txt", sep = "")
+a <- read.table("../data/UCI HAR Dataset/train/y_train.txt", sep = "")
+b <- read.table("../data/UCI HAR Dataset/test/y_test.txt", sep = "")
 activityEnum <- rbind(a,b)   # [10299 x 1]
 
-a <- read.table("./data/UCI HAR Dataset/train/subject_train.txt", sep = "")
-b <- read.table("./data/UCI HAR Dataset/test/subject_test.txt", sep = "")
+a <- read.table("../data/UCI HAR Dataset/train/subject_train.txt", sep = "")
+b <- read.table("../data/UCI HAR Dataset/test/subject_test.txt", sep = "")
 subjectID <- rbind(a,b)      # [10299 x 1]
 
-a <- read.table("./data/UCI HAR Dataset/train/X_train.txt", sep = "")
-b <- read.table("./data/UCI HAR Dataset/test/X_test.txt", sep = "")
+a <- read.table("../data/UCI HAR Dataset/train/X_train.txt", sep = "")
+b <- read.table("../data/UCI HAR Dataset/test/X_test.txt", sep = "")
 rawData <- rbind(a,b)        # [10299 x 561]
 
 # check for data size consistency
@@ -178,4 +178,5 @@ rownames(tidyData2) <- 1:Nu
 write.table(tidyData2,"tidyDataSummary.txt",row.names = FALSE)
 
 # b<-as.matrix(colnames(tidyData2))
+
 
