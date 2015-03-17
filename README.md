@@ -19,8 +19,8 @@ Some comments on each of the above steps are provided below:
 
 ################## part(1) ##################
 
-The test data (2947 observations) is appended to the training data (7352 observations) for 
-the following file types:
+The test data (2947 observations) is appended to the training data (7352 observations) 
+for the following file types:
 
   1) X_*.txt
   2) y_*.txt
@@ -37,7 +37,7 @@ A consistency check between the data set sizes was performed.
 
 Only measurements that are the output of either the mean() or std() function are retained. 
 In particular, measurements that are the output of the function meanFreq() are excluded. 
-The desired measurement variables are suffixed with either "_mean()" or "_std()".
+The desired measurement variables indicated with the suffix of either "_mean()" or "_std()".
 
 ################## part(3) ##################
 
@@ -49,7 +49,7 @@ to explicitly indicate the activity of walking on level ground.
 
 ################## part(4) ##################
 
-The original measurement variable names were quite descriptive. So again, only minor modifications 
+The original measurement variable names were quite descriptive. So only minor modifications 
 were done for clean up. The changes are outlined below:
 
     1) Variable names are kept together (not split by the function operating on the data).
@@ -85,9 +85,9 @@ distinct (activity,subjectID).
 The rows of "tidyData2" are sorted, 1st, according to activity (least strenuous to most strenuous), 
 and 2nd, by subject ID.
 
-The data, when written out to a file, is hard to read because of the number of columns and the 
-large number of displayed digits. But, it was deemed preferable to keep full precision since this 
-is an input file for further downstream processing.
+The data, "tidyData2", when written out to a file ("tidyDataSummary.txt"), is hard to read because 
+of the large number of columns and the large number of displayed digits. But it was deemed preferable 
+to keep full precision since this is an input file for further downstream processing.
 
 The dataset can be easily read into R with: 
 
