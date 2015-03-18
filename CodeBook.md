@@ -3,8 +3,8 @@ The original data sets are described in README_originalSource.txt and
 features_info_originalSource.txt (copied to my Repo for reference)
 
 The original variable names (from the features.txt file) are already quite descriptive.
-Thus, the new data variable names for the tidy dataset are essentially the original data variable names 
-with the following slight modifications:
+Thus, the new data variable names for the tidy dataset are essentially the original data variable 
+names with the following slight modifications:
 
     1) Variable names are kept together (not split by the function operating on the data).
           ex: "tBodyAcc-mean()-X" ==> "tBodyAccX-mean()"
@@ -25,8 +25,10 @@ The new variable names can be decoded (from left to right) as follows:
           t: indicates a time domain variable
           f: indicates a frequency domain variable (FFT of the corresponding time domain variable)
     2) next word:
-          "Body": measurement processed to filter out the effects of gravity and noise (measure body motion only)
-          "Gravity": measurement processed to filter out the effects of body motion (measure gravity effects only)
+          "Body": measurement processed to filter out the effects of gravity and noise 
+                  (measure body motion only)
+          "Gravity": measurement processed to filter out the effects of body motion 
+                     (measure gravity effects only)
     3) next word:
           "Acc": accelerometer measurement
           "Gyro": gyroscope measurement
