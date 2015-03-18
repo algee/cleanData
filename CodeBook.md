@@ -10,9 +10,11 @@ with the following slight modifications:
           ex: "tBodyAcc-mean()-X" ==> "tBodyAccX-mean()"
     2) The variables with the redundant "BodyBody" term are replaced with a single "Body" 
           ex: "fBodyBodyAccJerkMag-std() => "fBodyAccJerkMag-std()"
-    3) The "()" are removed to allow variable names to work with dplyr functions which operate on unquoted names 
+    3) The "()" are removed to allow variable names to work with dplyr functions which operate on 
+       unquoted names 
           ex: "fBodyBodyAccJerkMag-std() => "fBodyAccJerkMag-std"
-    4) The "-" are replaced with "_" to allow variable names to work with dplyr functions which operate on unquoted names
+    4) The "-" are replaced with "_" to allow variable names to work with dplyr functions which 
+       operate on unquoted names
           ex: "fBodyBodyAccJerkMag-std => "fBodyAccJerkMag_std"
 
 The activity label "WALK" was changed to "WALK_LEVEL" to explicitly indicate walking on level ground.
