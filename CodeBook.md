@@ -17,7 +17,7 @@ with the following slight modifications:
 
 The activity label "WALK" was changed to "WALK_LEVEL" to explicitly indicate walking on level ground.
       
-The new variable name can be decoded (from left to right) as follows:
+The new variable names can be decoded (from left to right) as follows:
     
     1) 1st character:
           t: indicates a time domain variable
