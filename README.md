@@ -1,6 +1,6 @@
 ```
-The script run_analysis.r is written for the R course project "Getting and Cleaning Data" from 
-John Hopkins University (3/2014).
+The script run_analysis.r is written for the R course project "Getting and Cleaning Data" 
+from John Hopkins University (3/2014).
 
 The course project consists of creating a "tidy" dataset using the raw data from:
 
@@ -37,7 +37,8 @@ A consistency check between the data set sizes was performed.
 
 Only measurements that are the output of either the mean() or std() function are retained. 
 In particular, measurements that are the output of the function meanFreq() are excluded. 
-The desired measurement variables indicated with the suffix of either "_mean()" or "_std()".
+The desired measurement variables are indicated with the suffix of either 
+"_mean()" or "_std()".
 
 ################## part(3) ##################
 
@@ -63,7 +64,8 @@ were done for clean up. The changes are outlined below:
 
 A few additional clean up tasks were performed. In particular: 
 
-     1) The input conditions are prepended (in the col dimension) to the data measurements
+     1) The input conditions (activity and subjectID) are prepended (in the col dimension) to 
+        the data measurements
      2) the rows are sorted 1st by the strenuous level of the activity, and 2nd by the subject ID
              activity level sort order: 
                  "LAYING"             
@@ -80,7 +82,8 @@ A few additional clean up tasks were performed. In particular:
 "tidyData2" computes the mean of each measurement variable of "tidydata1" grouped by 
 distinct (activity,subjectID).
 
-"tidyData2" has the same columns as "tidyData1" (above) and thus has the same tidy aspects.
+"tidyData2" has the same columns as "tidyData1" (above) and thus has the same tidy aspects. 
+The variable details for both "tidyData1" and "tidyData2" are given in the file CODEBOOK.md.
 
 The rows of "tidyData2" are sorted, 1st, according to activity (least strenuous to most strenuous), 
 and 2nd, by subject ID.
